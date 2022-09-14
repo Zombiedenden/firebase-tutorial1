@@ -1,6 +1,6 @@
-##Learing how to use firebase to create and deploy apps.
+### Learing how to use firebase to create and deploy apps.
 
-###Requirements:
+#### Requirements:
 - node.js
 - GCP project
 - Firebase project
