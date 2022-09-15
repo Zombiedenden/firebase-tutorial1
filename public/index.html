@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Hello Firebase World</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.9.4/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/9.9.4/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.4/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/9.9.4/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/9.9.4/firebase-functions-compat.js"></script>
     <script defer src="/__/firebase/9.9.4/firebase-messaging-compat.js"></script>
@@ -25,8 +27,9 @@
 
   </head>
   <body>
+      <h1>Hello Firebase World</h1>
 
-    <button onclick="googleLogin()">Login with Google</button>"
+    <button type="button" class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
 
     <script src="app.js"></script>
   </body>

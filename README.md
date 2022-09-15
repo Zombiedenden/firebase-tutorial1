@@ -4,3 +4,5 @@
 - node.js
 - GCP project
 - Firebase project
+- Firebase Google Login
+- Firebase Firestore Database
