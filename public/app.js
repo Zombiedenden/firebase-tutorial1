@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", event => {
     myPost.get()
         .then(doc => {
             const data = doc.data();
-            document.write( data.title + `<br>`);
-            document.write( data.createdAt );
+            document.write(data.title + `<br>`);
+            document.write(data.createdAt);
         });
 });
 
