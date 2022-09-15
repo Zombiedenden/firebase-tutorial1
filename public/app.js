@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", event => {
 
     const db = firebase.firestore();
     const myPost = db.collection('posts').doc('firstpost');
+    // myPost.onSnapshot(doc => {
+    //         const data = doc.data();
+    //         document.write(data.title + `<br>`);
+    //         document.write(data.createdAt);
+    //     });
+
     myPost.onSnapshot(doc => {
             const data = doc.data();
-            document.write(data.title + `<br>`);
-            document.write(data.createdAt);
+            document.querySelector('#title').innerHTML = data.title;
         });
 });
 
@@ -20,4 +25,10 @@ function googleLogin() {
             console.log(user);
         })
         .catch(console.log);
+}
+
+function updatePost(e) {
+    const db = firebase.firestore();
+    const myPost = db.collection('posts').doc('firstpost');
+    myPost.update({ title: e.target.value });
 }
