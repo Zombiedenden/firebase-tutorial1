@@ -27,10 +27,18 @@
 
   </head>
   <body>
-    <h1 id="title"></h1>
+    <!-- <h1 id="title"></h1> -->
     <!-- <button type="button" class="btn btn-primary" onclick="googleLogin()">Login with Google</button> -->
 
     <!-- <input onchange="updatePost(event)"> -->
-    <script src="app.js"></script>
+
+    <h3>Storage Uploads</h3>
+    <input type="file" onchange="uploadFile(this.files)">
+    <hr>
+    <img id="imgUpload" src="" width="100vw" alt="test image">
+
+
+    <!-- <script src="app.js"></script> -->
+    <script src="app_storage.js"></script>
   </body>
 </html>
